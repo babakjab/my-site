@@ -46,6 +46,26 @@
     }
   </style>
 
+  <!-- Load sans + monospace with latin-ext (Ə/ə, ı, ğ, ü, …) -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Noto+Sans+Mono:wght@400;600&display=swap&subset=latin-ext" rel="stylesheet">
+
+<style>
+  /* Azerbaijani containers */
+  .az { font-family: "Noto Sans", Arial, sans-serif; }
+
+  /* VERY IMPORTANT: override the browser’s monospace for code inside AZ blocks */
+  .az code { 
+    font-family: "Noto+Sans+Mono","Noto Sans Mono","Noto Sans", monospace;
+    font-size: 1em;          /* keep size consistent */
+    font-variant-ligatures: none;
+  }
+
+  /* If you sometimes mark code itself as AZ (e.g., <code class="az">…) */
+  code.az {
+    font-family: "Noto+Sans+Mono","Noto Sans Mono","Noto Sans", monospace;
+  }
+</style>
+
   <!-- Structured data -->
   <script type="application/ld+json">
   {
@@ -207,9 +227,9 @@
 
       <p>In Azerbaijani, the focus particle <code>mi/mı</code> lets a single sentence open into multiple logical perspectives:</p>
 
-      <ul>
+      <ul class="az">
 
-        <li><code class="az">Ali Makıya gedəcək?</code> — Will Ali go to Maku?</li>
+        <li><code>Ali Makıya gedəcək?</code> — Will Ali go to Maku?</li>
 
         <li><code>Ali <em>mi</em> Makıya gedəcək?</code> — Is it <em>Ali</em> (and not someone else) who will go?</li>
 
@@ -339,6 +359,7 @@ not a structurally different question. This reveals Persian’s limits in depth 
 
 
 </html>
+
 
 
 
