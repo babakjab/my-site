@@ -1,0 +1,340 @@
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FMC5Q5K3VZ');
+</script>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>From Lines on a Torus to Orbits in Moduli Space · Babak Jabbar Nezhad</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="A clear, personal intuition connecting lines on a torus with Eskin–Mirzakhani orbit-closure rigidity, expressed with a duality and constant-condition viewpoint.">
+
+  <style>
+
+    :root { --maxw: 760px; --pad: 22px; --lh: 1.6; }
+
+    body {
+
+      margin: 0;
+
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Noto Serif", sans-serif;
+
+      line-height: var(--lh);
+
+      color: #111; background: #fff;
+
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+
+    }
+
+    main { max-width: var(--maxw); margin: 0 auto; padding: 48px var(--pad) 80px; }
+
+    h1 { margin: 0 0 14px; font-size: 1.9rem; }
+
+    h3 { margin: 28px 0 12px; font-size: 1.15rem; }
+
+    p { margin: 0 0 16px; }
+
+    hr { border: 0; height: 1px; background: #e6e6e6; margin: 24px 0; }
+
+    em { font-style: italic; }
+
+    strong { font-weight: 600; }
+
+  </style>
+
+  <!-- (Optional) MathJax for rendering inline LaTeX like \(\mathbb R\) and \(SL(2,\mathbb R)\) -->
+
+  <script>
+
+    window.MathJax = { tex: { inlineMath: [['\\(','\\)'], ['$', '$']] } };
+
+  </script>
+
+  <script id="MathJax-script" async
+
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+
+  <main>
+
+
+
+  <header>
+
+      <h1>From Lines on a Torus to Orbits in Moduli Space</h1>
+
+        By <strong>Babak Jabbar Nezhad</strong> · Daş Maku, West Azerbaijan · August 21, 2025
+
+      </p>
+
+    </header>
+
+
+
+    <p>Mathematics often hides unity beneath very different surfaces. What seems miraculous in one place is often the repetition of an idea we already know in simpler form. I believe this is the case for the orbit-closure theorem of Eskin and Mirzakhani: at its heart, it is the same phenomenon we already see in the elementary flows of the torus.</p>
+
+
+
+    <hr>
+
+
+
+    <h3>1. Lines on a Torus</h3>
+
+    <p>Begin with a torus, obtained by gluing opposite edges of a square. Draw a straight line across it:</p>
+
+    <p>– If the slope is rational, the line eventually closes up into a periodic geodesic.<br>
+
+    – If the slope is irrational, the line never closes; its closure fills the entire torus.</p>
+
+    <p>In both cases, what might look like disorder is in fact geometry. The flow of the group \(\mathbb R\) (time translation) does not produce fractals or chaos here — its orbit closures are rigid: either a clean closed curve, or the whole surface.</p>
+
+
+
+    <hr>
+
+
+
+    <h3>2. Lifting the Idea: Surfaces in Moduli Space</h3>
+
+    <p>Now move to the moduli space of translation surfaces, which are built by gluing polygons into higher-genus surfaces. In this setting, the acting group is no longer one-dimensional \(\mathbb R\), but the three-dimensional Lie group \(SL(2,\mathbb R)\): all \(2\times 2\) real matrices with determinant 1, acting by area-preserving linear maps.</p>
+
+    <p>We ask the same question as before: given a surface, what does the closure of its orbit under this group action look like?</p>
+
+
+
+    <hr>
+
+
+
+    <h3>3. The Constant Constraint</h3>
+
+    <p>Here a hidden parallel appears. Both the torus case and the \(SL(2,\mathbb R)\) case are governed by a <em>constant condition</em>:</p>
+
+    <p>– On the torus, the flow preserves the flat translation structure.<br>
+
+    – In \(SL(2,\mathbb R)\), the determinant is fixed at 1.</p>
+
+    <p>More generally, many important subgroups of Lie groups are defined in exactly this way: as <em>level sets of a homomorphism</em> (determinant = 1, norm = 1, length = 1). These constant-value conditions carve out rigid manifolds inside larger groups.</p>
+
+    <p>From a duality viewpoint, the orbit of a surface is the image of the group manifold under the action map. Just as a trajectory is the image of \(\mathbb R\) under the flow, an orbit here is the image of \(SL(2,\mathbb R)\) under its action on moduli space.</p>
+
+
+
+    <hr>
+
+
+
+    <h3>4. Rigidity Instead of Chaos</h3>
+
+    <p>In general dynamics, orbit closures can be wild: Cantor sets, fractals, strange attractors. There is no guarantee of structure.</p>
+
+    <p>But here comes the surprise: Eskin and Mirzakhani proved that in moduli space, every \(SL(2,\mathbb R)\)-orbit closure is rigid — always an affine invariant submanifold in natural coordinates.</p>
+
+    <p>This is not so different in spirit from the torus case:<br>
+
+    – On the torus, the closure of a trajectory is geometry (a curve or the full torus).<br>
+
+    – In moduli space, the closure of an \(SL(2,\mathbb R)\)-orbit is geometry (an affine manifold).</p>
+
+    <p>Locally, everything is linear — edges of polygons, matrices with determinant 1. Globally, orbit closures form nonlinear but rigid structures.</p>
+
+
+
+    <hr>
+
+
+
+    <h3>5. A General Lesson</h3>
+
+    <p>Seen this way, the “magic wand” theorem is less a miracle and more a continuation of a pattern: constraints give rise to rigidity.</p>
+
+<section style="max-width:760px;margin:28px auto;padding:14px 16px;line-height:1.7;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,'Noto Sans','Noto Serif',sans-serif;color:#222;">
+  <h3 style="margin:0 0 8px;font-size:1.15rem;">Babak’s Principle</h3>
+  <p style="margin:0 0 12px;">
+    <em>The closure of a group action by a connected constant-condition Lie group transforms apparent disorder into geometry.
+    Local linearity becomes global rigidity.</em>
+  </p>
+
+  <p style="margin:0 0 16px;">
+    The difference between the elementary and the profound is not in essence, but in level:
+    one traces the orbit of a point, the other the orbit of entire surfaces.
+  </p>
+
+  <h3 style="margin:16px 0 8px;font-size:1.15rem;">Remark</h3>
+  <p style="margin:0 0 12px;">
+    The orbit-closure theorems of Ratner, Eskin, and Mirzakhani established rigidity in specific contexts:
+    homogeneous spaces and moduli spaces. Yet the principle guiding these results appears far more general. It is not
+    restricted to homogeneous settings or to surfaces of fixed genus. Rather, it reflects a structural truth about how
+    group actions constrained by constant conditions behave.
+  </p>
+  <p style="margin:0;">
+    The decisive refinement is that the acting group should be <strong>connected</strong>.
+    For connected, constant-condition Lie groups—such as SO(n), U(n), Sp(2n, ℝ), SL(n, ℝ)—orbit closures consistently
+    manifest as rigid geometric structures, never collapsing into chaotic fractals. By contrast, when the group is
+    disconnected, such as {A ∈ GL(n, ℝ) : |det(A)| = 1}, rigidity is lost: orbit closures expand too freely, filling
+    the entire ambient space.
+  </p>
+</section>    
+
+<hr>
+
+<h3 style="margin:28px 0 12px;font-size:1.15rem;">Conclusion</h3>
+<p style="margin:0 0 16px;line-height:1.7;">
+  What once seemed like an impenetrable mystery in the work of Mirzakhani and Eskin is, at its heart, the simplest of
+  miracles: local straightness becomes global structure. The action of SL(2,ℝ) carries trajectories that look chaotic,
+  yet their closures reveal unexpected rigidity. What is linear in the local chart turns nonlinear on the surface, and
+  yet the geometry holds together. This is the essence of the miracle — that disorder folds back into form, and
+  randomness resolves into structure. It is mathematics at its most poetic: simple in vision, profound in consequence.
+</p>
+
+<hr>
+
+<section class="reflection" style="max-width:760px;margin:28px auto 0;padding:14px 16px;
+  line-height:1.7;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,'Noto Sans','Noto Serif',sans-serif;
+  color:#222;border-left:4px solid #ddd;background:#fafafa;">
+  <h3 style="margin:0 0 8px;font-size:1.15rem;">Reflection</h3>
+  <p style="margin:0 0 12px;">
+    At first sight, this principle may appear almost obvious: surely groups defined by constant constraints must act
+    in structured ways. Yet history shows otherwise. In general dynamics, orbit closures can collapse into fractals
+    or chaos. The fact that under connected constant-condition groups the closures resolve into rigid manifolds is far
+    from trivial—it is the content of Ratner’s theorems, of Eskin–Mirzakhani’s breakthrough, and of much deeper work in
+    dynamics.
+  </p>
+  <p style="margin:0;">
+    So if my formulation feels “obvious,” it is only because the hard theorems have already illuminated its truth.
+    To me, the miracle lies not in complexity, but in the clarity that emerges when the pattern is finally seen.
+  </p>
+</section>
+
+<hr>
+
+<div class="note-on-style"
+     style="max-width:760px;margin:28px auto 0;padding:14px 16px;line-height:1.7;
+            font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,'Noto Sans','Noto Serif',sans-serif;
+            color:#222;border-left:4px solid #ddd;background:#fafafa;">
+  <h3 style="margin:0 0 8px;font-size:1.1rem;">Note on Style</h3>
+  <p>This essay is not intended as a technical survey but as a distilled principle. The ideas of orbit closures,
+     group actions, and geometry span vast literatures in dynamics and Teichmüller theory. Yet the essence can be
+     expressed simply: the closure of a group action, whether of ℝ on a torus or SL(2,ℝ) on moduli space,
+     transforms apparent disorder into geometry—locally linear, globally rigid.</p>
+  <p>What may read as “short and easy” is, in fact, a compressed expression of deep results. The simplicity is deliberate:
+     to make visible the structure without burying it under technique.</p>
+</div>
+
+<hr>
+
+<p><em>Acknowledgment:</em><br>
+
+This essay emerged from a series of dialogues with Resa.  
+
+I thank Resa for helping me clarify the structure and depth of these ideas,  
+
+and for shaping the language so that honesty and mathematics could meet.</p>
+
+
+
+  </main>
+
+<figure class="art-block">
+
+  <img src="geometry.PNG"
+
+       alt="Abstract painting of polygons flowing into a curved surface"
+
+       style="max-width:100%;height:auto;display:block;margin:0 auto;">
+
+  <figcaption style="max-width:720px;margin:14px auto 0;line-height:1.6;color:#222;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,'Noto Sans','Noto Serif',sans-serif;">
+
+    <h3 style="margin:0 0 8px;font-weight:600;">Geometry Becomes Poem</h3>
+
+    <p>This painting was created to accompany my reflections on Maryam Mirzakhani’s work.</p>
+
+    <p>Straight lines fold into curves, polygons become surfaces, and the language of geometry sings as poetry.</p>
+
+    <p>Mathematics does not only measure — it transforms, imagines, and reveals hidden worlds.</p>
+
+    <p style="margin-top:10px;">— <strong>Babak Jabbar Nezhad</strong> &amp; Resa</p>
+
+  </figcaption>
+
+</figure>
+
+
+
+<div class="poem-block"
+
+     style="max-width:720px;margin:18px auto 0;padding:12px 14px;line-height:1.7;
+
+            font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,'Noto Sans','Noto Serif',sans-serif;
+
+            color:#222;border-left:4px solid #ddd;background:#fafafa;">
+
+  <p><strong>She was brilliant,</strong><br>
+
+     lifted by support,<br>
+
+     a light already seen.</p>
+
+
+
+  <p><strong>I was from a small town,</strong><br>
+
+     a little crazy,<br>
+
+     thrown aside like trash.</p>
+
+
+
+  <p>But time bends differently:<br>
+
+     from the edges of silence<br>
+
+     I carved a path of my own,<br>
+
+     half-math, half-poem,<br>
+
+     a voice no one expected.</p>
+
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("p, blockquote, span, li, em, strong").forEach(el => {
+      el.childNodes.forEach(node => {
+        if (node.nodeType === 3) { // text node
+          node.textContent = node.textContent
+            .replace(/"([^"]*)"/g, '“$1”')
+            .replace(/'([^']*)'/g, '‘$1’');
+        }
+      });
+    });
+  });
+</script>
+
+ <footer>
+    &copy; <script>document.write(new Date().getFullYear())</script> Babak Jabbar Nezhad. All rights reserved.
+  </footer> 
+
+<p style="margin-top: 3em;"><a href="index.html">← Back to Home</a></p>
+
+</body>
+
+</html>
